@@ -20,7 +20,7 @@ export const PicklesPage: React.FC = () => {
             Sattvic Pickles (Pachallu)
           </h1>
           <p className="text-xs sm:text-sm text-gray-600 mt-2 max-w-2xl mx-auto font-serif-devotional">
-            Prepared without onions or garlic using cold-pressed gingelly oil, Vedic rock salt, and sun incubation. Zero synthetic colors or vinegar preservatives.
+            Prepared without onions or garlic using Groundnut Oil, Normal Salt, and sun incubation. Zero synthetic colors or vinegar preservatives.
           </p>
 
           <div className="mt-3 inline-flex flex-col sm:flex-row items-center gap-1.5 bg-[#FFFBEB] px-4 py-2 rounded-2xl border border-[#FDE68A] text-xs font-serif-devotional font-bold text-[#92400E]">

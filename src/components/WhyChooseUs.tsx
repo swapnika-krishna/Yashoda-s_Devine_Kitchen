@@ -14,7 +14,7 @@ export const WhyChooseUs: React.FC = () => {
     },
     {
       title: 'Carefully Prepared',
-      desc: 'Made in small devotional batches using cold-pressed gingelly oil, rock salt, and sun-incubation.'
+      desc: 'Made in small devotional batches using Groundnut Oil, Normal Salt, and sun-incubation.'
     },
     {
       title: 'No Added Colors',

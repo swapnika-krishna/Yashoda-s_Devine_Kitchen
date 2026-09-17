@@ -58,7 +58,7 @@ export const AboutSection: React.FC = () => {
               </p>
 
               <p>
-                We focus on authentic Indian culinary traditions where ingredients are handled with reverence. Our pickles are naturally cured in porcelain Bharani jars using cold-pressed gingelly oil and pure rock salt, while our powders and podis are stone-ground to preserve the essential volatile oils and comforting aromas of home cooking.
+                We focus on authentic Indian culinary traditions where ingredients are handled with reverence. Our pickles are naturally cured in porcelain Bharani jars using Groundnut Oil and Normal Salt, while our powders and podis are stone-ground to preserve the comforting aromas of home cooking.
               </p>
 
               <p>
@@ -77,7 +77,7 @@ export const AboutSection: React.FC = () => {
               <div className="p-3 rounded-xl bg-white border border-[#D4AF37]/30 shadow-2xs">
                 <ShieldCheck className="w-5 h-5 text-[#991B1B] mx-auto mb-1" />
                 <span className="font-bold text-[11px] text-[#0D472B] block uppercase tracking-wider">Natural Preservation</span>
-                <span className="text-[10px] text-gray-500">Oil & Vedic Rock Salt</span>
+                <span className="text-[10px] text-gray-500">Groundnut Oil & Normal Salt</span>
               </div>
 
               <div className="p-3 rounded-xl bg-white border border-[#D4AF37]/30 shadow-2xs">

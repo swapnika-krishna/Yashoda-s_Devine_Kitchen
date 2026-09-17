@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { X, MessageCircle, Phone, Sparkles, ShieldCheck, Leaf } from 'lucide-react';
 import { Product } from '../types';
 import { BUSINESS_INFO } from '../data/products';
@@ -9,6 +9,16 @@ interface ProductDetailModalProps {
 }
 
 export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product, onClose }) => {
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [onClose]);
+
   if (!product) return null;
 
   const whatsappInquiryUrl = `https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent(
@@ -16,11 +26,26 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product,
   )}`;
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-200">
+    <div 
+      className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-200"
+      onClick={onClose}
+    >
       <div 
         className="relative bg-[#FAF6EE] rounded-3xl border-2 border-[#D4AF37] max-w-2xl w-full shadow-2xl overflow-hidden text-left"
         onClick={e => e.stopPropagation()}
       >
+        {/* Top-Left Back Button */}
+        <button
+          type="button"
+          onClick={onClose}
+          id="product-detail-back-button"
+          className="absolute top-4 left-4 z-20 inline-flex items-center gap-1.5 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full bg-white hover:bg-[#FAF6EE] text-[#0D472B] hover:text-[#991B1B] font-serif-devotional text-xs sm:text-sm font-bold shadow-md border border-[#D4AF37] transition-all cursor-pointer active:scale-95"
+          aria-label="Back to products"
+        >
+          <span aria-hidden="true" className="text-base font-bold leading-none">←</span>
+          <span>Back</span>
+        </button>
+
         {/* Close Button */}
         <button
           type="button"

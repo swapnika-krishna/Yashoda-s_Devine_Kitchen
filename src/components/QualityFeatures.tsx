@@ -40,7 +40,7 @@ export const QualityFeatures: React.FC = () => {
             </h3>
             <div className="w-12 h-0.5 bg-[#D4AF37] mx-auto my-2" />
             <p className="text-xs text-gray-600 leading-relaxed">
-              No artificial colors. The vibrant red in our pickles comes exclusively from sun-ripened chillies and cold-pressed oil.
+              No artificial colors. The vibrant red in our pickles comes exclusively from sun-ripened chillies and Groundnut Oil.
             </p>
           </div>
 
@@ -68,7 +68,7 @@ export const QualityFeatures: React.FC = () => {
             </h3>
             <div className="w-12 h-0.5 bg-[#D4AF37] mx-auto my-2" />
             <p className="text-xs text-gray-600 leading-relaxed">
-              Traditional ingredients & preservation methods. Hand-ground rock salt and pure cold-pressed gingelly oil preserve naturally.
+              Traditional ingredients & preservation methods. Hand-ground Normal Salt and pure Groundnut Oil preserve naturally.
             </p>
           </div>
 

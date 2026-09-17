@@ -92,7 +92,7 @@ export const AboutPage: React.FC = () => {
                 Natural Preservation
               </h4>
               <p className="text-xs text-gray-600 leading-relaxed">
-                We preserve our pickles exclusively using time-tested methods: cold-pressed sesame oil, rock salt, and natural sunlight.
+                We preserve our pickles exclusively using time-tested methods: Groundnut Oil, Normal Salt, and natural sunlight.
               </p>
             </div>
 
@@ -104,7 +104,7 @@ export const AboutPage: React.FC = () => {
                 Stone Ground Flavors
               </h4>
               <p className="text-xs text-gray-600 leading-relaxed">
-                Our podis and daily masalas are slow-roasted in traditional iron vessels and milled to preserve their innate essential oils.
+                Our podis and daily masalas are slow-roasted in traditional iron vessels and milled to preserve their innate aromatic freshness.
               </p>
             </div>
           </div>
