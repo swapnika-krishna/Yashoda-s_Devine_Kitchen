@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, MessageCircle, Award, Leaf, Heart, Sparkles } from 'lucide-react';
-import { BrandLogo } from './BrandLogo';
 import { BUSINESS_INFO } from '../data/products';
 
 export const Footer: React.FC = () => {
@@ -20,8 +19,13 @@ export const Footer: React.FC = () => {
           
           {/* Brand Presentation Column */}
           <div className="lg:col-span-5 space-y-4">
-            <Link to="/" className="inline-block">
-              <BrandLogo size="lg" textColor="text-white" />
+            <Link to="/" className="inline-block group">
+              <h3 className="font-display font-bold text-2xl text-[#E5C158] tracking-wider uppercase group-hover:text-white transition-colors">
+                Yashoda’s Divine Kitchen
+              </h3>
+              <p className="text-xs font-serif-devotional text-[#F3EAD8] tracking-widest uppercase">
+                Flavors of Tradition
+              </p>
             </Link>
             
             <p className="text-sm font-serif-devotional text-[#E5C158] font-semibold tracking-wider">

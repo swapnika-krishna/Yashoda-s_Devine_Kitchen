@@ -41,11 +41,13 @@ export const AboutSection: React.FC = () => {
           {/* Right Narrative Column */}
           <div className="lg:col-span-7 space-y-5">
             
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#D4AF37] shadow-2xs">
-              <Sparkles className="w-3.5 h-3.5 text-[#B38728]" />
-              <span className="text-[11px] font-serif-devotional font-bold uppercase tracking-widest text-[#0D472B]">
-                {BUSINESS_INFO.tagline}
-              </span>
+            <div className="flex items-center gap-3.5">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#D4AF37] shadow-2xs">
+                <Sparkles className="w-3.5 h-3.5 text-[#B38728]" />
+                <span className="text-[11px] font-serif-devotional font-bold uppercase tracking-widest text-[#0D472B]">
+                  {BUSINESS_INFO.tagline}
+                </span>
+              </div>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-[#0D472B]">

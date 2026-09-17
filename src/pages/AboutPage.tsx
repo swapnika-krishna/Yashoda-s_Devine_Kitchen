@@ -17,17 +17,6 @@ export const AboutPage: React.FC = () => {
       <section className="relative bg-[#FAF6EE] py-14 border-b border-[#D4AF37]/40 text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* Official Emblem */}
-          <div className="flex justify-center mb-4">
-            <div className="relative rounded-full drop-shadow-md hover:scale-105 transition-transform duration-200">
-              <img
-                src="/images/yashoda_logo.png"
-                alt="Yashoda’s Divine Kitchen - Flavors of Tradition"
-                className="w-28 h-28 sm:w-36 sm:h-36 object-contain rounded-full"
-              />
-            </div>
-          </div>
-
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#D4AF37] shadow-2xs mb-3">
             <Sparkles className="w-3.5 h-3.5 text-[#B38728]" />
             <span className="text-[11px] font-serif-devotional font-bold uppercase tracking-widest text-[#0D472B]">

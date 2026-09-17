@@ -1,6 +1,5 @@
 import React from 'react';
 import { Phone, MessageCircle, Sparkles, ShieldCheck } from 'lucide-react';
-import { BrandLogo } from './BrandLogo';
 import { BUSINESS_INFO } from '../data/products';
 
 export const Hero: React.FC = () => {
@@ -102,8 +101,7 @@ export const Hero: React.FC = () => {
                 />
 
                 {/* Floating Brand Stamp on Image */}
-                <div className="absolute bottom-3 left-3 right-3 bg-[#FAF6EE]/95 backdrop-blur-xs p-3 rounded-xl border border-[#D4AF37]/50 shadow-sm flex items-center gap-3">
-                  <BrandLogo size="sm" showText={false} />
+                <div className="absolute bottom-3 left-3 right-3 bg-[#FAF6EE]/95 backdrop-blur-xs p-3 rounded-xl border border-[#D4AF37]/50 shadow-sm flex items-center justify-between">
                   <div>
                     <span className="block font-serif-devotional font-bold text-xs text-[#0D472B]">
                       Yashoda’s Divine Kitchen
@@ -112,6 +110,7 @@ export const Hero: React.FC = () => {
                       100% Sattvic • Zero Onion & Garlic
                     </span>
                   </div>
+                  <Sparkles className="w-4 h-4 text-[#B38728] flex-shrink-0" />
                 </div>
               </div>
 

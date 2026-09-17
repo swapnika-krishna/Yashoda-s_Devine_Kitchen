@@ -138,6 +138,14 @@ export const Navbar: React.FC = () => {
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
           <div className="lg:hidden mt-3 pt-3 border-t border-[#D4AF37]/40 pb-4 space-y-3 animate-in fade-in slide-in-from-top-2 duration-200">
+            <div className="flex flex-col items-center justify-center p-2.5 mb-2 bg-[#FAF6EE] rounded-xl border border-[#D4AF37]/40 shadow-xs text-center">
+              <span className="font-display font-bold text-base text-[#0D472B] tracking-wider uppercase">
+                Yashoda’s Divine Kitchen
+              </span>
+              <span className="text-[11px] font-serif-devotional text-[#991B1B] font-medium">
+                Flavors of Tradition • 100% Sattvic
+              </span>
+            </div>
             <nav className="flex flex-col space-y-1">
               {navLinks.map(link => (
                 <Link

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import officialLogo from '../assets/images/exact_yashoda_logo_1789658109605.jpg';
 
 interface BrandLogoProps {
   size?: 'sm' | 'md' | 'lg' | 'xl' | '2xl';
@@ -9,57 +10,48 @@ interface BrandLogoProps {
 
 export const BrandLogo: React.FC<BrandLogoProps> = ({
   size = 'md',
-  showText = true,
+  showText = false,
   textColor = 'text-[#0D472B]',
   className = ''
 }) => {
-  const [imageError, setImageError] = useState(false);
+  const [imgSrc, setImgSrc] = useState<string>(officialLogo);
 
   const sizeMap = {
-    sm: { icon: 44, text: 'text-sm' },
-    md: { icon: 58, text: 'text-base' },
-    lg: { icon: 76, text: 'text-xl' },
-    xl: { icon: 96, text: 'text-2xl' },
-    '2xl': { icon: 132, text: 'text-3xl' }
+    sm: { icon: 56, text: 'text-sm' },
+    md: { icon: 80, text: 'text-base' },
+    lg: { icon: 110, text: 'text-xl' },
+    xl: { icon: 140, text: 'text-2xl' },
+    '2xl': { icon: 200, text: 'text-3xl' }
   };
 
   const current = sizeMap[size];
 
+  const handleImgError = () => {
+    if (imgSrc === officialLogo) {
+      setImgSrc('/images/logo.png');
+    } else if (imgSrc === '/images/logo.png') {
+      setImgSrc('/images/yashoda_logo.png');
+    }
+  };
+
   return (
-    <div className={`flex items-center gap-3 select-none ${className}`}>
-      {/* 1st Authentic Circular Yashoda's Divine Kitchen Logo */}
+    <div className={`inline-flex items-center gap-3.5 select-none ${className}`}>
+      {/* Exact Official Uploaded Yashoda's Divine Kitchen Logo */}
       <div 
-        className="relative flex-shrink-0 rounded-full flex items-center justify-center overflow-hidden transition-transform hover:scale-105 duration-200"
+        className="relative flex-shrink-0 flex items-center justify-center transition-transform hover:scale-105 duration-200"
         style={{ width: current.icon, height: current.icon }}
         title="Yashoda’s Divine Kitchen - Flavors of Tradition"
       >
-        {!imageError ? (
-          <img
-            src="/images/yashoda_logo.png"
-            alt="Yashoda's Divine Kitchen - Flavors of Tradition"
-            className="w-full h-full object-contain select-none"
-            onError={() => setImageError(true)}
-          />
-        ) : (
-          /* Auspicious SVG Fallback if image path is unavailable */
-          <svg
-            viewBox="0 0 100 100"
-            className="w-full h-full rounded-full"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="50" cy="50" r="48" fill="#FAF6EE" stroke="#D4AF37" strokeWidth="3" />
-            <circle cx="50" cy="50" r="43" stroke="#0D472B" strokeWidth="1.5" />
-            <path
-              d="M30,55 C30,40 50,25 50,25 C50,25 70,40 70,55 C70,68 58,75 50,75 C42,75 30,68 30,55 Z"
-              fill="#D4AF37"
-            />
-            <circle cx="50" cy="50" r="6" fill="#0D472B" />
-          </svg>
-        )}
+        <img
+          src={imgSrc}
+          onError={handleImgError}
+          alt="Yashoda’s Divine Kitchen - Flavors of Tradition"
+          className="w-full h-full object-contain aspect-square select-none block"
+          loading="eager"
+        />
       </div>
 
-      {/* Brand Typography */}
+      {/* Optional Brand Typography */}
       {showText && (
         <div className="flex flex-col leading-tight">
           <span className={`font-display font-bold tracking-wider uppercase text-[15px] sm:text-[17px] drop-shadow-xs ${textColor}`}>
