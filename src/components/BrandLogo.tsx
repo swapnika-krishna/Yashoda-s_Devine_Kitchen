@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import officialLogo from '../assets/images/exact_yashoda_logo_1789658109605.jpg';
+import officialLogo from '../assets/images/yashoda_user_logo.png';
 
 interface BrandLogoProps {
   size?: 'sm' | 'md' | 'lg' | 'xl' | '2xl';

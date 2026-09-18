@@ -203,8 +203,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'ekadasi-palli-podi',
-    name: 'Ekadasi Palli Podi',
-    teluguName: 'Ekadasi Peanut Podi',
+    name: 'Ekadasi Palli Powder (Podi)',
+    teluguName: 'Ekadasi Peanut Powder / Palli Podi',
     category: 'powders',
     subCategory: 'Ekadasi Vrata Special',
     traditionalPreparation: 'Made of hand-roasted peanuts in small batches and freshly ground with Rock Salt.',
